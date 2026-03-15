@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="left">
+        <img src="img/logo.svg" alt="logo" width="100px" class="logo">
+    </div>
+    
+    
+    
+    
+    <div class="right">
+        <h3>Get iintoo it today</h3>
+        <p id="legal">There is no charge or obligation upon registration</p>
+            <div class="buttons">
+        <button id="reg-facebook">Register with Facebook</button>
+        <button id="reg-linkedin">Register with LinkedIn</button>
+            </div>
+            <p class="or">
+        OR
+            </p>
+
+        <form class="name-phone">
+       <p>     
+  <label for="email">Email</label>
+    <input type="email" name="Email" id="email" placeholder="honggildong@email.com" required>
+    </p>
+    <p>
+    <label for="phone">Phone</label>
+    <input type="tel" name="Phone" id="phone">
+    </p>
+        </form>
+
+
+    <p class="q1"><b>What type of investor are you?</b></p>
+    <p class="q2">Select the type of investor you are below</p>
+  <!--
+<form class="qradio">
+    <p>
+        <input type="radio" name="option" id="individual" value="individual">
+        <label for="individual">Individual</label>
+    </p>
+    <p>
+        <input type="radio" name="option" id="business" value="business">
+        <label for="business">Business</label>
+    </p>
+    <p>
+        <input type="radio" name="option" id="ira" value="ira">
+        <label for="ira">IRA</label>
+    </p>
+    <p>
+        <input type="radio" name="option" id="trust" value="trust">
+        <label for="trust">Trust</label>
+    </p>
+    
+    
+    </form>
+-->
+    <form>
+    <div class="qradio">
+        <label><input type="radio" name="option" value="individual">Individual</label>
+        <label><input type="radio" name="option" value="business">Business</label>
+        <label><input type="radio" name="option" value="ira">IRA</label>
+        <label><input type="radio" name="option" value="trust">Trust</label>
+
+    </div>
+    
+    <label><input type="checkbox" name="agreement" id="agreement">I agree to the terms and services from iintoo <a href="" target="_blank">View full terms</a></label>
+
+    <input type="submit" id="login" value="Create Account">
+
+
+
+
+    </form>
+  
+   
+
+
+
+    </div>
+    
+</body>
+</html>
+
+
+
+
+
+
+-----------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+}
+.logo {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}
+
+.left {
+    background-image: url(img/bg.jpg);
+    display: flex;
+    width: 50%;
+    height: 100%;
+    box-sizing: border-box;
+    float: left;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: static;
+    
+}
+.right {
+  background-color: white;
+  width: 50%;
+  
+  height: 100%;
+  box-sizing: border-box;
+  float: right;
+  display: flex; 
+  display: inline;
+  padding: 3rem;
+  position: static;
+  align-items: center;
+}
+div.buttons {
+  max-width: 100%;
+  margin: auto;
+}
+.or {
+  text-align: center;
+  max-width: 70%;
+  
+}
+h3 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 24px;
+  max-width: 50%;
+
+}
+.legal {
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+  font-weight: lighter;
+  color: darkgray;
+  max-width: 50%;
+}
+
+#reg-facebook {
+  background-color: darkblue;
+  border: none;
+  height: 40px;
+  width: 220px;
+  text-align: center;
+  color: white;
+  background-image: url(img/facebook.svg);
+  background-size: 20px;
+  background-position: 5px center;
+  background-repeat: no-repeat;
+  margin: 10px;
+  max-width: 50%;
+  position: relative;
+}
+#reg-linkedin {
+  background-color: rgb(69, 69, 247);
+  border: none;
+  height: 40px;
+  width: 220px;
+  text-align: center;
+  color: white;
+  background-image: url(img/linkedin.svg);
+  background-size: 20px;
+  background-position: 5px center;
+  background-repeat: no-repeat;
+  margin: 10px;
+  max-width: 50%;
+  position: relative;
+}
+
+
+
+
+.name-phone {
+  display: flex;
+  width: 100%;
+  padding: 0px;
+  max-width: 100%;
+  position: relative;
+}
+.name-phone p{
+  display: block;
+  width: 200px;
+  position: relative;
+}
+.name-phone label{
+  display: block;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: gray;
+  position: relative;
+  
+
+}
+.name-phone input{
+  border: none;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  position: relative;
+
+}
+.name-phone p {
+  border: gray solid 1px;
+   margin: 10px;
+  position: relative;
+}
+.name-phone p:hover {
+  border-left: lightblue solid 3px;
+}
+.name-phone p:active {
+  border-left: lightblue solid 3px;
+}
+.name-phone input:active {
+  border: none;
+  
+}
+
+
+.q1{
+  font-size: 18px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  max-width: 100%;
+}
+.q2 {
+  font-size: 14px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: gray;
+  max-width: 100%;
+
+}
+.qradio {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  max-width: 100%;
+}
+
+input[type="submit"] {
+  display: block;
+  background-color: skyblue;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  height: 40px;
+  width: 200px;
+  
+
+}
+
+
+
+
+
+
+
+
+
+----------------------------------------------------
+------------------------------------------------------
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>intoo login page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="left">
+        <img src="img/logo.svg" alt="logo" width="100px" class="logo">
+    </div>
+    
+    <div class="right">
+        <h3>Get iintoo it today</h3>
+        <p id="legal">There is no charge or obligation upon registration</p>
+        <div class="reg-buttons">
+        <a href=""><button id="reg-facebook">Register with Facebook</button></a>
+        <a href=""><button id="reg-linkedin">Register with Facebook</button></a>
+        </div>
+        <p class="or">
+            OR
+        </p>
+        <form class="name-phone">
+            <p>
+                <label for="email">Email</label>
+                <input type="email" name="Email" id="email" placeholder="hinggildong@email.com" required>
+            </p>
+            <p>
+                <label for="phone">Phone Number</label>
+                <input type="tel" name="Phone" id="phone">
+            </p>
+
+            <p class="q1"><b>What type of investor are you?</b></p>
+            <p class="q2">Select the type of investor you are below</p>
+
+            <div class="qradio">
+                <label><input type="radio" name="option" value="individual">Individual</label>
+                <label><input type="radio" name="option" value="business">Business</label>
+                <label><input type="radio" name="option" value="ira">IRA</label>
+                <label><input type="radio" name="option" value="trust">Trust</label>
+            </div>
+
+            <label><input type="checkbox" name="agreement" id="agreement">I agree to the terms and services from iintoo <a href="" target="_blank">View full terms</a></label>
+
+            <input type="submit" id="login" value="Create Account">
+
+
+
+
+        </form>
+
+    </div>
+    
+    
+</body>
+</html>
