@@ -1,10 +1,10 @@
 @font-face {
   font-family: BarlowMedium;
-  src: url(fonts/Barlow-Medium.otf);
+  src: url(fonts/Barlow-Medium.otf); /* задаём фонт-фэмили из директории */
 }
 @font-face {
   font-family: BarlowRegular;
-  src: url(fonts/Barlow-Regular.otf)
+  src: url(fonts/Barlow-Regular.otf)  /* задаём фонт-фэмили из директории */
 }
 body {
     width: 100vw;
@@ -18,17 +18,17 @@ body {
 
 
 main {
-  width: 1440px;
+  width: 1440px;  /* Размер повторил с размеров шаблона */
   height: 1000px;
   margin: auto;
   display: flex;
 }
 
 .logo {
-  position: relative;
-  width: 140px;
+  position: relative; /* Для того чтоб сместить положение объекта */
   top: 50px;
   left: 50px;
+  width: 140px;
 }
 
 .left {
@@ -48,7 +48,7 @@ main {
   width: 47%;
   
   height: 100%;
-  box-sizing: border-box;
+  box-sizing: border-box; /* параметр размера исключающий марджины и пэдинги */
   /* display: inline-block; */
   padding: 120px 72px;
   /* position: relative; */
@@ -64,11 +64,12 @@ main {
 .buttons a {
   display: flex;           /* придаём контейнеру свойства флексбокса */
   flex-direction: column;  /* делаем вертикальную ось основной */
-  justify-content: center; /* устанавливаем контент в центре по-вертикали */
+  box-sizing: border-box;  /* параметр размера исключающий марджины и пэдинги */
+  justify-content: center; /* распределяем контент в центре по-вертикали */
   text-decoration: none;   /* убираем подчёркивания с надписей */
   margin: 10px;
   padding: 10px;
-  height: 30px;
+  height: 57px;
   width: 45%;
 }
 
@@ -103,7 +104,6 @@ main {
   font-family: BarlowRegular, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   margin: 50px auto;
   text-align: center;
-  font-family: ;
   font-size: 12px;
   width: 100%;
   
@@ -125,19 +125,13 @@ main {
 }
 
 
-
-
-
-
 .name-phone {
   display: flex;
   width: 100%;
   max-width: 100%;
   position: relative;
-      display: flex;
-    justify-content: space-around;
+  justify-content: space-around;
 }
-
 
 .name-phone p{
   display: block;
@@ -149,6 +143,7 @@ main {
   position: relative;
   
 }
+
 .name-phone label{
   display: block;
   margin: 7px;
@@ -156,10 +151,9 @@ main {
   
   font-family: BarlowRegular, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   color: #AFAFAF;
-  position: relative;
-  
-
+  position: relative;  
 }
+
 .name-phone input{
   border: none;
   background: none;
@@ -168,7 +162,6 @@ main {
   position: relative;
   max-width: 100%;
   background: none;
-
 }
 
 .name-phone p:hover {
@@ -191,13 +184,14 @@ main {
 }
 
 
-.q1{
+.q1 {
   font-size: 18px;
   font-family: BarlowMedium, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   max-width: 100%;
   font-weight: 100;
   margin-top: 54px;
 }
+
 .q2 {
   font-size: 14px;
   font-family: BarlowRegular, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -206,6 +200,7 @@ main {
   margin-bottom: 53px;
 
 }
+
 .qradio {
   font-family: BarlowRegular, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-size: 14px;
@@ -216,10 +211,12 @@ main {
   height: 160px;
   
 }
+
 .qradio img{
   display: inline;
   position: relative;
 }
+
 .qradio label {
   width: 25%;
   text-align: center;
@@ -238,7 +235,6 @@ main {
   border-radius: 8px;
   padding: 5px;
   filter: drop-shadow(0 4mm 2mm rgba(0, 0, 0, 0.071))
-
 }
 
 
@@ -285,5 +281,4 @@ input[type="submit"] {
   height: 42px;
   width: 246px;
   margin: 10px;
-
 }
